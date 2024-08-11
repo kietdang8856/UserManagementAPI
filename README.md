@@ -75,6 +75,7 @@ Sau khi Login thì sẽ có Bearer Token dùng để authenticate cho các 
 
   ![Edit User](Images/EditUser.png)
 
+Đổi userName thành DangTuanKiet2011068856 thành công
 
 ### DELETE /users/{id}
 - **Mô tả**: Endpoint này xóa một người dùng dựa trên ID.
