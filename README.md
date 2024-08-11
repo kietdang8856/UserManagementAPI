@@ -2,6 +2,7 @@
 
 Đây là một ứng dụng ASP.NET Core đơn giản sử dụng hệ thống Identity để quản lý người dùng. Ứng dụng này hỗ trợ các thao tác cơ bản như đăng ký, đăng nhập, thay đổi mật khẩu và quản lý người dùng.
 
+
 ## Gói NuGet sử dụng
 
 ![Các gói NuGet](Images/Packages.png)
@@ -11,6 +12,8 @@ Sử dụng Identity Entity Framework Core để quản lý dữ liệu người
 
 ### Microsoft.EntityFrameworkCore.InMemory
 Đây là provider cơ sở dữ liệu InMemory, nó cho phép lưu trữ dữ liệu trong bộ nhớ mà không cần phải connect với một database.
+
+
 
 ## API Endpoints
 
@@ -80,21 +83,22 @@ Sau khi Login thì sẽ có Bearer Token dùng để authenticate cho các 
 
   ![Delete User](Images/DeleteUser.png)
 
+Sau khi Delete User thành công thì chỉ còn testuser1 và testuser2.
+
+
+
 
 ## Hướng dẫn cài đặt và chạy ứng dụng
 
-1. **Clone repository**:
-    ```git clone https://github.com/kietdang8856/UserManagementAPI```
+1. **Clone repository**: ```git clone https://github.com/kietdang8856/UserManagementAPI```
 
 
 2. **Cài đặt các gói NuGet cần thiết**:
-   
+
 ![Các gói NuGet](Images/Packages.png)
 
 
-3. **Chạy ứng dụng**:
+3. **Chạy ứng dụng**: Run với Visual Studio.
 
-Run với Visual Studio.
 
-4. **Truy cập API**:
-    Sử dụng Postman để gửi yêu cầu tới các endpoint.
+4. **Truy cập API**: Sử dụng Postman để gửi yêu cầu tới các endpoint.
