@@ -6,7 +6,6 @@ using System.Security.Claims;
 using UserManagementAPI.Models;
 using static UserManagementAPI.Models.UserModel;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -33,8 +32,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapIdentityApi<IdentityUser>();
-
-app.MapGet("/test", (ClaimsPrincipal user) => $"Hello {user.Identity!.Name}").RequireAuthorization();
 
 // Endpoint to list all users
 app.MapGet("/users", async (UserManager<IdentityUser> userManager) =>
@@ -82,8 +79,6 @@ app.MapPost("/users/change-password/{id}", async (string id, [FromBody] ChangePa
 
     return Results.BadRequest(result.Errors);
 }).RequireAuthorization();
-
-
 
 app.Run();
 
